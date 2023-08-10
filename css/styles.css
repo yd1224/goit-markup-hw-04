@@ -140,7 +140,13 @@ img {
 }
 /* Hero-styles */
 .hero-section {
+  max-width: 1440px;
   background-color: var(--navyblue);
+  background-image: url(../images/hero/img-1.jpg);
+  background-repeat: no-repeat;
+  margin: 0 auto;
+  background-position: center;
+  background-size: cover;
   padding-top: 188px;
   padding-bottom: 188px;
 }
