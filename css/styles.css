@@ -8,6 +8,8 @@
   --cornflower: #e7e9fc;
   --indent: 24px;
   --items: 3;
+  --light-slate: #8e8f99;
+  --ocean: #404bbf;
 }
 
 /**
@@ -215,6 +217,16 @@ img {
   | Advantages-styles
   |============================
 */
+.ad-logo-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 264px;
+  height: 112px;
+  border-radius: 4px;
+  background: var(--footer-light);
+  margin-bottom: 8px;
+}
 .advantages-section {
   background-color: var(--bcg);
   padding-top: 120px;
@@ -278,7 +290,7 @@ img {
   line-height: 1.11;
   letter-spacing: 0.02em;
   color: var(--navyblue);
-  width: 162px;
+
   margin: 0 auto;
   margin-bottom: 72px;
 }
@@ -311,6 +323,66 @@ img {
   font-weight: 400;
   line-height: 1.5;
   letter-spacing: 0.02em;
+  margin-bottom: 8px;
+}
+.team-logo-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
+  --items: 4;
+}
+.team-logo-list-wrapper {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--brand-color);
+  border-radius: 50%;
+}
+/**
+  |============================
+  | Customers-section
+  |============================
+*/
+.customer-section {
+  --items: 6;
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+.customer-section-title {
+  text-align: center;
+
+  font-size: 36px;
+
+  font-weight: 700;
+  line-height: 1.11;
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
+
+  color: var(--navyblue);
+  margin-bottom: 72px;
+}
+.customer-section-list-item {
+}
+.customer-logo-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 168px;
+  height: 88px;
+  color: var(--light-slate);
+  border-radius: 4px;
+  border: 1px solid var(--light-slate);
+}
+.customer-logo-link:hover,
+.customer-logo-link:focus .customer-logo {
+  color: var(--ocean);
+  border-color: var(--ocean);
+}
+.customer-logo {
+  fill: currentColor;
 }
 /**
   |============================
@@ -345,7 +417,19 @@ img {
   color: var(--footer-light);
   width: 264px;
 }
+.footer-section-title {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
 
+  letter-spacing: 0.02em;
+  color: var(--bcg);
+  margin-bottom: 16px;
+}
+.footer-container {
+  display: flex;
+  gap: 120px;
+}
 /**
   |============================
   | Portfolio
