@@ -10,7 +10,11 @@
   --items: 3;
 }
 
-/* Global-styles */
+/**
+  |============================
+  | Global-styles
+  |============================
+*/
 body {
   font-family: Roboto, sans-serif;
   color: var(--body-text);
@@ -41,7 +45,11 @@ body {
 .section {
 }
 
-/* reset */
+/**
+  |============================
+  | reset
+  |============================
+*/
 h1,
 h2,
 h3,
@@ -71,8 +79,16 @@ img {
   flex-basis: calc((100% - var(--indent) * (var(--items) - 1)) / var(--items));
 }
 
-/* Studio */
-/* Header-styles */
+/**
+  |============================
+  | Studio
+  |============================
+*/
+/**
+  |============================
+  | Header-styles
+  |============================
+*/
 .header {
   border-bottom: 1px solid var(--cornflower);
 }
@@ -138,7 +154,11 @@ img {
 .header-address-list-item-link:focus {
   color: var(--pressed-state);
 }
-/* Hero-styles */
+/**
+  |============================
+  | Hero-styles
+  |============================
+*/
 .hero-section {
   max-width: 1440px;
   background-color: var(--navyblue);
@@ -190,7 +210,11 @@ img {
 .hero-section-btn:focus {
   background-color: var(--pressed-state);
 }
-/* Advantages-styles */
+/**
+  |============================
+  | Advantages-styles
+  |============================
+*/
 .advantages-section {
   background-color: var(--bcg);
   padding-top: 120px;
@@ -213,7 +237,11 @@ img {
   line-height: 1.5;
   letter-spacing: 0.02em;
 }
-/* Offers-styles */
+/**
+  |============================
+  | Offers-styles
+  |============================
+*/
 .offers-section {
   padding-bottom: 120px;
 }
@@ -229,7 +257,11 @@ img {
 
   margin-bottom: 72px;
 }
-/* Team-styles */
+/**
+  |============================
+  |  Team-styles
+  |============================
+*/
 
 .team-section {
   background-color: var(--footer-light);
@@ -280,7 +312,11 @@ img {
   line-height: 1.5;
   letter-spacing: 0.02em;
 }
-/* Footer-styles */
+/**
+  |============================
+  | Footer-styles
+  |============================
+*/
 .footer {
   background-color: var(--navyblue);
   padding-top: 100px;
@@ -310,8 +346,16 @@ img {
   width: 264px;
 }
 
-/* Portfolio */
-/* Section-styles */
+/**
+  |============================
+  | Portfolio
+  |============================
+*/
+/**
+  |============================
+  | Section-styles
+  |============================
+*/
 .portfolio-section {
   padding-top: 96px;
   padding-bottom: 120px;
