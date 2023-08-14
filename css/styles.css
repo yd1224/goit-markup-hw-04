@@ -649,6 +649,7 @@ img {
   top: 50%;
   left: 50%;
   transform: translateX(-50%) translateY(-50%);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .modal-btn {
   background-color: var(--cornflower);
@@ -664,17 +665,22 @@ img {
   position: absolute;
   top: 24px;
   right: 24px;
+  cursor: pointer;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  color: var(--navyblue);
 }
 .modal-btn-icon {
-  fill: var(--navyblue);
+  fill: currentColor;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .modal-btn:hover,
-.modal-btn:focus,
-.modal-btn:active .modal-btn-icon {
-  fill: var(--bcg);
+.modal-btn:focus .modal-btn-icon {
+  color: var(--bcg);
 }
 .modal-btn:hover,
 .modal-btn:focus,
 .modal-btn:active {
   background-color: var(--ocean);
+  border: none;
 }
