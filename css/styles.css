@@ -139,7 +139,7 @@ img {
   position: relative;
   /* color: #404bbf; */
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  color: var(--navyblue);
+  color: #404bbf;
 }
 /* .header-nav-list-item-link::after {
   content: '';
