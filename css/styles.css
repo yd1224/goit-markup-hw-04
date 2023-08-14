@@ -136,6 +136,7 @@ img {
   padding-bottom: 24px;
   position: relative;
   color: #404bbf;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .header-nav-list-item-link.current::after {
   content: '';
@@ -163,7 +164,7 @@ img {
 .header-nav-list-item-link:hover,
 .header-nav-list-item-link:focus {
   color: var(--pressed-state);
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  
 }
 
 .header-address {
@@ -182,6 +183,7 @@ img {
   line-height: 1.5;
   letter-spacing: 0.02em;
   font-style: normal;
+  color 250ms cubic-bezier(0.4, 0, 0.2, 1)
 }
 .header-address-list-item-link:hover,
 .header-address-list-item-link:focus {
@@ -239,11 +241,12 @@ img {
   border-radius: 4px;
   min-width: 169px;
   min-height: 56px;
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1)
 }
 .hero-section-btn:hover,
 .hero-section-btn:focus {
   background-color: var(--pressed-state);
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
 }
 /**
   |============================
