@@ -550,11 +550,18 @@ img {
 }
 .section-list-link-img {
 }
-.overlay {
+
+.overlay-text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+
+  color: var(--footer-light);
   position: absolute;
   top: 0;
   left: 0;
-  padding: 40px 32px 164px;
+  padding: 40px 32px;
   width: 100%;
   height: 100%;
   background: var(--brand-color);
@@ -565,15 +572,6 @@ img {
   display: flex;
   align-items: center;
   justify-content: center;
-}
-
-.overlay-text {
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 1.5;
-  letter-spacing: 0.02em;
-
-  color: var(--footer-light);
 }
 .section-list-item {
   overflow: hidden;
