@@ -11,6 +11,8 @@
   --light-slate: #8e8f99;
   --ocean: #404bbf;
   --green: #31d0aa;
+  --navyblue-modal: rgba(46, 47, 66, 0.4);
+  --dairy: #fcfcfc;
 }
 
 /**
@@ -125,7 +127,7 @@ img {
   color: var(--navyblue);
 }
 .header-nav-list-item-link {
-  color: var(--navyblue);
+  /* color: var(--navyblue); */
   font-size: 16px;
   font-weight: 500;
   font-family: Roboto, sans-serif;
@@ -135,10 +137,11 @@ img {
   padding-top: 24px;
   padding-bottom: 24px;
   position: relative;
-  color: #404bbf;
+  /* color: #404bbf; */
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  color: var(--navyblue);
 }
-.header-nav-list-item-link::after {
+/* .header-nav-list-item-link::after {
   content: '';
   display: block;
   width: 100%;
@@ -148,7 +151,7 @@ img {
   position: absolute;
   left: 0;
   bottom: -1px;
-}
+} */
 .header-nav-list-item-link:hover::after,
 .header-nav-list-item-link:focus::after {
   content: '';
@@ -614,4 +617,64 @@ img {
   letter-spacing: 0.02em;
   text-align: center;
   color: var(--body-text);
+}
+/**
+  |============================
+  | Modal window
+  |============================
+*/
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: var(--navyblue-modal);
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.backdrop.is-hidden {
+  opacity: 0;
+  pointer-events: none;
+  visibility: hidden;
+}
+.modal {
+  width: 408px;
+  min-height: 584px;
+  border-radius: 4px;
+  background: var(--dairy);
+  box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.2),
+    0px 1px 3px 0px rgba(0, 0, 0, 0.12), 0px 1px 1px 0px rgba(0, 0, 0, 0.14);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+}
+.modal-btn {
+  background-color: var(--cornflower);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  flex-shrink: 0;
+  padding: 0;
+  width: 24px;
+  height: 24px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  position: absolute;
+  top: 24px;
+  right: 24px;
+}
+.modal-btn-icon {
+  fill: var(--navyblue);
+}
+.modal-btn:hover,
+.modal-btn:focus,
+.modal-btn:active .modal-btn-icon {
+  fill: var(--bcg);
+}
+.modal-btn:hover,
+.modal-btn:focus,
+.modal-btn:active {
+  background-color: var(--ocean);
 }
