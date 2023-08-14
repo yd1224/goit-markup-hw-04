@@ -182,7 +182,7 @@ img {
   line-height: 1.5;
   letter-spacing: 0.02em;
   font-style: normal;
-  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .header-address-list-item-link:hover,
 .header-address-list-item-link:focus {
@@ -416,19 +416,19 @@ img {
   color: var(--light-slate);
   border-radius: 4px;
   border: 1px solid var(--light-slate);
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .customer-logo-link:hover,
-.customer-logo-link:focus .customer-logo {
+.customer-logo-link:focus,
+.customer-logo-link:active .customer-logo {
   color: #404bbf;
   border-color: #404bbf;
 }
 .customer-logo {
   fill: currentColor;
 }
-.customer-section-list-item {
-  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
+
 /**
   |============================
   | Footer-styles
