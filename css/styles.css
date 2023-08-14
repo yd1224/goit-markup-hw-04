@@ -515,8 +515,10 @@ img {
   color: var(--bcg);
   border: 1px solid transparent;
 }
+
 .item-box {
   position: relative;
+  overflow: hidden;
 }
 .section-list-link-img {
 }
@@ -529,7 +531,14 @@ img {
   height: 100%;
   background: var(--brand-color);
   transform: translateY(100%);
+  transition-property: transform;
+  transition-duration: 400ms;
+  transition-timing-function: ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
+
 .overlay-text {
   font-weight: 400;
   font-size: 16px;
@@ -537,6 +546,13 @@ img {
   letter-spacing: 0.02em;
 
   color: var(--footer-light);
+}
+.section-list-item {
+  overflow: hidden;
+}
+.section-list-link:hover,
+.section-list-link:focus .overlay {
+  transform: translateY(0);
 }
 
 .portfolio-box {
