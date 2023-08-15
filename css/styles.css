@@ -479,11 +479,18 @@ img {
 .footer-container {
   display: flex;
   gap: 120px;
+  align-items: baseline;
 }
 
 .footer-link:hover,
 .footer-link:focus {
   background-color: var(--green);
+}
+.footer-text-container {
+  margin-right: 120px;
+}
+.footer-section-list {
+  gap: 16px;
 }
 
 /**
@@ -571,6 +578,7 @@ img {
   display: flex;
   align-items: center;
   justify-content: center;
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .section-list-item {
   overflow: hidden;
@@ -578,7 +586,7 @@ img {
 .section-list-link {
   display: block;
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  /* transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1); */
 }
 .section-list-link:hover,
 .section-list-link:focus,
